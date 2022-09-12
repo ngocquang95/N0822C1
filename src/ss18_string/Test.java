@@ -14,5 +14,12 @@ public class Test {
 
         System.out.println(str1 == str3); // true => false
         System.out.println(str1.equals(str3)); // true
+
+        //0->len - 1
+        String str = "Hello World";
+        String temp = "";
+        for (int i = str.length() - 1; i >= 0; i--) {
+            temp += str.charAt(i);
+        }
     }
 }
