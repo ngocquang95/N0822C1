@@ -1,6 +1,7 @@
 package ss30_arraylist;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class Main {
     public static void main(String[] args) {
@@ -13,11 +14,28 @@ public class Main {
         //generic
         ArrayList<Integer> arrayList = new ArrayList<>();
 
-        arrayList.add(10); // autoboxing
-        arrayList.add(20);
-        arrayList.add(30);
-        arrayList.add(40);
+        arrayList.add(100); // autoboxing
         arrayList.add(50);
+        arrayList.add(-30);
+        arrayList.add(40);
+        arrayList.add(-50);
+
+        for (int i =0; i < arrayList.size() - 1; i++) {
+            for (int j = i  + 1; j < arrayList.size(); j++) {
+                if (arrayList.get(i) > arrayList.get(j)) {
+                    // sắp xếp theo tuổi
+                    int temp = arrayList.get(i);
+                    arrayList.set(i, arrayList.get(j));
+                    arrayList.set(j, temp);
+
+                    // hóa vị tên
+
+                    // hoán vị điểm
+
+                    //
+                }
+            }
+        }
 
         //10 20 30 40 50
         //20 30 40 50
@@ -37,6 +55,7 @@ public class Main {
 //            System.out.print(arrayList.get(i) + "\t");
 //        }
 
-//        System.out.println(arrayList);
+//        Collections.sort(arrayList);
+        System.out.println(arrayList);
     }
 }
