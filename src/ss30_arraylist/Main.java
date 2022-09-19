@@ -27,7 +27,6 @@ public class Main {
                     int temp = arrayList.get(i);
                     arrayList.set(i, arrayList.get(j));
                     arrayList.set(j, temp);
-
                     // hóa vị tên
 
                     // hoán vị điểm
